@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevalidation</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <form action="" id="myForm">
+        <fieldset>
+            <legend>Photo Details</legend>
+            <div class="top">
+                <label for="title">Title: </label><br>
+                <input id="inputField"  type="text" name="title" onkeyup="checkInput()"> <br> <br>
+                <label for="disc">Discription: </label><br>
+                <textarea id="textarea"  name="disc" id="" cols="50" rows="10" onkeyup="checkInput1()"></textarea>
+            </div>
+            <div class="middle">
+                <div class="left">
+                    <label for="continent">Continent:</label><br>
+                    <select name="continent" id="">
+                        <option>Choose Option</option>
+                        <option>Asia</option>
+                        <option>Europe</option>
+                        <option>North America</option>
+                        <option>Africa</option>
+                        <option>South America</option>
+                        <option>Antarctica</option>
+                    </select> <br> <br>
+                    <label for="contry">Contry:</label> <br>
+                    <select name="contry" id="">
+                        <option>Canada</option>
+                        <option>United State</option>
+                        <option>China</option>
+                        <option>India</option>
+                        <option>Germany</option>
+                        <option>Australia</option>
+                        <option>France</option>
+                        <option>Brazil</option>
+                        <option>Brazil</option>
+                        <option>United Kingdom</option>
+                        <option>Japan</option>
+                        <option>Russia</option>
+                        <option>Indonesia</option>
+                        <option>Itly</option>
+                        <option>Combodia</option>
+                        <option>Finland</option>
+                        <option>Denmark</option>
+                    </select> <br> <br>
+                    <label for="city">City:</label><br>
+                    <input type="text" name="city"> <br>
+                </div>
+                <div class="right">
+
+                    <div class="copyrights">
+                        <label>Copyrights ?</label> <br>
+                        <input type="radio" name="Copyrights" value="All rights reserved">
+                        <label for="all">All rights reserved</label> <br>
+                        <input type="radio" name="Copyrights" onclick="displayother()">
+                        <label for="common" >Creavite Commons</label> <br>
+                    </div>
+
+                    <div id="creative" >
+                        <label>Creavite Common Types:</label> <br>
+                        <input type="checkbox" name="Attribution" id="Attribution">
+                        <label for="">Attribution</label> <br>
+                        <input type="checkbox" name="Noncommercial" id="Noncommercial">
+                        <label for="">Noncommercial</label> <br>
+                        <input type="checkbox" name="no_derivative" id="no_derivative">
+                        <label for="">No Derivative Works</label> <br>
+                        <input type="checkbox" name="Share_Alike" id="Share_Alike">
+                        <label for="">Share Alike</label>
+                    </div>
+
+
+                </div>
+                
+            </div>
+            <div id="accept" class="licence">
+                <label  for="">I accept the software license</label>
+                <input id="checkaccept" type="checkbox" name="license" id="license" onchange="checkInput2()">
+            </div>
+            <div class="middle">
+                <div class="left">
+                    <label for="">Rate this Photo:</label> <br>
+                    <input type="text"> <br>
+                    <label for="">Color Collection:</label> <br>
+                    <input type="text"> <br>
+                </div>
+                <div class="time">
+                    <label for="">Date Taken:</label> <br>
+                    <input type="text"> <br>
+                    <label for="">Time Taken:</label> <br>
+                    <input type="text"> 
+                </div>
+            </div>
+            <Div class="button">
+                <button id="submitButton">Submit</button>
+                <button id="clearButton">Clear</button>
+                
+            </Div>
+        </fieldset>
+
+    </form>
+    <script src="code.js"></script>
+</body>
+
+</html>

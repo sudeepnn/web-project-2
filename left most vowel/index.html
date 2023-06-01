@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Functions Demo</title>
+  <script>
+    // Function to find the position of the left-most vowel in a string
+    function findLeftMostVowelPosition(str) {
+      var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+      for (var i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i].toLowerCase())) {
+          return i + 1; // Adding 1 to make the position 1-based instead of 0-based
+        }
+      }
+
+      return -1; // Return -1 if no vowels found
+    }
+
+    // Function to reverse the digits of a number
+    function reverseNumberDigits(num) {
+      var reversedNum = parseInt(num.toString().split('').reverse().join(''));
+      return reversedNum;
+    }
+
+    // Function to demonstrate the solutions
+    function demonstrate() {
+      var str = prompt('Enter a string:');
+      var position = findLeftMostVowelPosition(str);
+      alert('Left-most vowel position: ' + position);
+
+      var num = parseInt(prompt('Enter a number:'));
+      var reversedNum = reverseNumberDigits(num);
+      alert('Reversed number: ' + reversedNum);
+    }
+  </script>
+</head>
+<body>
+  <button onclick="demonstrate()">Click to demonstrate</button>
+</body>
+</html>
